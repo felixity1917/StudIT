@@ -1,0 +1,26 @@
+<!-- Alternative profile.html with manual field rendering -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Profile</title>
+</head>
+<body>
+    <h1>Update Profile</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="id_branch">Branch:</label>
+        {{ form.branch }}<br>
+
+        <label for="id_subjects">Subjects:</label>
+        {{ form.subjects }}<br>
+
+        <label for="id_hostel_block">Hostel Block:</label>
+        {{ form.hostel_block }}<br>
+
+        <button type="submit">Save Profile</button>
+    </form>
+
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
