@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/bg_image.jpg);
+    background-size: cover;
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+    height: 100vh;
+    padding: 0px;
+}
+
+.overlays{
+    position:absolute;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0,0,0,0.69);
+    height: 100%;
+    width: 100%;
+}
+
+.Container{
+    height: 100%;
+    width: 100%;
+}
+
+.Navigation_Bar{
+    position: absolute;
+    font-family: 'Figtree';
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #00000000;
+    right: 30px;
+    top: 10px;
+    height:50px;
+    width:500px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    position:relative;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.Logo{
+    position:absolute;
+    font-family: "Figtree";
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 30px;
+}
+
+.menu-icon{
+    position:absolute;
+    top:-2px;
+    right:0px;
+}
+
+.Welcome_message{
+    position:absolute;
+    justify-content: center;
+    align-items=center;
+    height:80px;
+    width:200px;
+    top:300px;
+    left:700px;
+}
+
+.M2{
+    
+}
