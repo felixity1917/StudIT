@@ -103,7 +103,7 @@ body {
     font-family: "Figtree";
     src:url(../assets/Figtree-Regular.ttf);
     justify-content: center;
-    align-items=center;
+    align-items:center;
     padding-left: 50px;
 }
 
