@@ -1,0 +1,39 @@
+<!-- core/templates/core/study_sessions.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Sessions</title>
+</head>
+<body>
+    <h1>Filtered Study Sessions</h1>
+
+    <!-- Form for filtering study sessions -->
+    <form method="GET">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="slot">Slot:</label>
+        <input type="text" id="slot" name="slot">
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Displaying the filtered study sessions -->
+    <h2>Results</h2>
+    <ul>
+        {% for session in sessions %}
+            <li>
+                <strong>Subject:</strong> {{ session.subject }} <br>
+                <strong>Slot:</strong> {{ session.slot }} <br>
+                <strong>Date:</strong> {{ session.date }} <br>
+                <strong>Time:</strong> {{ session.time }} <br>
+                <strong>Location:</strong> {{ session.location }}
+            </li>
+        {% empty %}
+            <li>No study sessions found.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
