@@ -1,0 +1,33 @@
+<!-- core/templates/core/create_session.html (manual field rendering) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Study Session</title>
+</head>
+<body>
+    <h1>Create Study Session</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label for="id_subject">Subject:</label>
+        {{ form.subject }}<br>
+
+        <label for="id_slot">Slot:</label>
+        {{ form.slot }}<br>
+
+        <label for="id_date">Date:</label>
+        {{ form.date }}<br>
+
+        <label for="id_time">Time:</label>
+        {{ form.time }}<br>
+
+        <label for="id_location">Location:</label>
+        {{ form.location }}<br>
+
+        <button type="submit">Create Session</button>
+    </form>
+
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
