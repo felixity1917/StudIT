@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url(../assets/bg_image.jpg);
     background-size: cover;
     background-color: #2b2b2b;
@@ -77,17 +76,17 @@ body {
 .Welcome_message {
     position: absolute;
     justify-content: center;
-    align-items: center; /* Correct syntax */
+    align-items: center;
     height: 80px;
     width: 200px;
     top: 300px;
     left: 700px;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease;
 }
 
-/* Apply scaling on hover to create the expansion effect */
+
 .Welcome_message:hover {
-    transform: scale(1.1); /* Expands by 10% */
+    transform: scale(1.1);
 }
 
 .Welcome_message a{
@@ -101,8 +100,8 @@ body {
 }
 
 .M2{
-    font-family: "Precious";
-    src:url(../assets/Precious.ttf);
+    font-family: "Figtree";
+    src:url(../assets/Figtree-Regular.ttf);
     justify-content: center;
     align-items=center;
     padding-left: 50px;
