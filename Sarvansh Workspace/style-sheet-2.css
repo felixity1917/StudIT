@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/bg_image.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.overlays{
+    color: rgba(0,0,0,0.5)
+}
+
+/*.container {
+    width: 100%;
+    max-width: 1200px;
+}*/
+
+.Container{
+    
+}
+
+.Container::before{
+    
+}
+
+.Container *{
+    
+}
+
+.Navigation_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.Logo {
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.Main_content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.students {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*.student {
+    width: 20%;
+    height: 300px;
+    background-color: #555;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.student-1 {
+    background-image: url('student1.png');
+}
+
+.student-2 {
+    background-image: url('student2.png'); 
+}
+
+.student-3 {
+    background-image: url('student3.png'); 
+}
+
+.student-4 {
+    background-image: url('student4.png');
+}
