@@ -225,3 +225,35 @@ body {
 .Dashboard:hover::after {
     width: 100%;
 }
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Adjust based on your design */
+    width: 250px; /* Width of the menu */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: right 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.menu.active {
+    right: 0; /* Slide in */
+}
+
+.menu-links {
+    list-style: none;
+    padding: 20px; /* Space inside the menu */
+}
+
+.menu-links li {
+    margin: 20px 0; /* Spacing between items */
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+

@@ -23,10 +23,19 @@
 
             </div><!--End of Navigation_Bar-->
 
+            <div class="menu">
+                <ul class="menu-links">
+                    <li><a href="../Kapish-Workspace/leaderboard/leaderboard.html">Leaderboard</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Friends</a></li>
+                </ul>
+            </div>
+    
             <div class="Main_Content">
-
+                <h4></h4>
             </div>
         </div><!--End of containter Class-->
+        
         <div class="Welcome_message">
             <li><a href="../Kapish-Workspace/signin/index.html">
             <h1 class="M1">Welcome to</h1>
@@ -34,6 +43,26 @@
             </a>
             </li>
         </div>
+
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.menu');
+
+    // Toggle the menu when the menu icon is clicked
+    menuIcon.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent event from bubbling up to the document
+        menu.classList.toggle('active');
+    });
+
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (menu.classList.contains('active') && !menu.contains(event.target) && !menuIcon.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
+});
+    </script>
 </body>
 </html>
